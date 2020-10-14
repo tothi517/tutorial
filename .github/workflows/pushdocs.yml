@@ -1,4 +1,4 @@
-name: pushdocs.yml
+name: Push documentation
 
 on:
   push:
