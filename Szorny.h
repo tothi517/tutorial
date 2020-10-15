@@ -7,7 +7,6 @@
  * 
  * Created on: 2020/10/14 17:15
 */
-#pragma once
 #include<iostream>
 #include<string>
 #include<fstream>
@@ -16,17 +15,17 @@
 class Szorny
 {
 public:
-	Szorny(std::string nev, int hp, int dmg,double speed) :nev(nev), hp(hp), dmg(dmg),speed(speed) {} 
-	int getDmg()const;
-	int getHp()const;
-	static void harc(Szorny &,Szorny &);
-	double getSpeed()const;
-	std::string getName()const;	
-	static Szorny parseUnit(const std::string);
+	Szorny(std::string nev, int hp, int dmg,double speed) :nev(nev), hp(hp), dmg(dmg),speed(speed) {}  
+	int getDmg()const;	///< Lekéri a hõs DMG-ét
+	int getHp()const;	///< Lekéri a hõs HP-ját
+	static void harc(Szorny &,Szorny &); ///< Az argumentumban megadott két hõst harcoltatja
+	double getSpeed()const;	///< Lekéri a hõs atackspeedjét
+	std::string getName()const;		///< Lekéri a hõs nevét
+	static Szorny parseUnit(const std::string);	///< Beolvassa a hõs értékeit
 private:
-	std::string nev;
-	int hp;
-	int dmg;
-	double speed;
-	void tamad(Szorny &)const;
+	std::string nev; ///< A hõs neve
+	int hp; 	///< A hõs életpontjai
+	int dmg;	///< A hõs ütésének erõsege
+	double speed;	///< A hõs ütéseinek gyorsasága
+	void tamad(Szorny &)const; 
 };
