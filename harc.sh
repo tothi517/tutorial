@@ -1,7 +1,7 @@
 #!/bin/bash
 IFS=$'\n'
 
-rm kimentek.txt
+rm kiemntek.txt
 
 ./a.out units/Hosarkany.json units/Sotetvarazslo.json >> kimenetek.txt
 ./a.out units/Hosarkany.json units/Arnykiraly.json >> kimenetek.txt 
