@@ -113,7 +113,7 @@ void Szorny::harc(Szorny & s1,Szorny & s2) {
 		else if (gcd(szamlalo, s1.getSpeed()) == s1.getSpeed())s1.tamad(s2);
 		else if (gcd(szamlalo, s2.getSpeed()) == s2.getSpeed())s2.tamad(s1);
 	}
-	if (s1.getHp() == 0) std::cout << s2.getName() << " wins. Remaining HP: " << s2.getHp() << std::endl;
-	if (s2.getHp() == 0) std::cout << s1.getName() << " wins. Remaining HP: " << s1.getHp() << std::endl;
+	if (s1.getHp() == 0) std::cout << s2.getName() << " wins. Remaining HP: " << s2.getHp() << ";";
+	if (s2.getHp() == 0) std::cout << s1.getName() << " wins. Remaining HP: " << s1.getHp() << ";";
 
 }
