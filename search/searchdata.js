@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "ghps",
   1: "s",
-  2: "ghp"
+  2: "ghps"
 };
 
 var indexSectionNames =
