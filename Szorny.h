@@ -16,10 +16,10 @@
 class Szorny
 {
 public:
-	Szorny(std::string nev, int hp, int dmg,double speed) :nev(nev), hp(hp), dmg(dmg),speed(speed) {}  
+	Szorny(std::string nev, int hp, int dmg,double speed) :nev(nev), hp(hp), dmg(dmg),speed(speed) {}  ///< Szörny osztály konstruktora
 	int getDmg()const;	///< Lekéri a hõs DMG-ét
 	int getHp()const;	///< Lekéri a hõs HP-ját
-	static void harc(Szorny &,Szorny &); ///< Az argumentumban megadott két hõst harcoltatja
+	static void harc(Szorny &,Szorny &); ///< A parancsori argumentumban megadott két hõst harcoltatja
 	double getSpeed()const;	///< Lekéri a hõs atackspeedjét
 	std::string getName()const;		///< Lekéri a hõs nevét
 	static Szorny parseUnit(const std::string);	///< Beolvassa a hõs értékeit
@@ -28,5 +28,5 @@ private:
 	int hp; 	///< A hõs életpontjai
 	int dmg;	///< A hõs ütésének erõsege
 	double speed;	///< A hõs ütéseinek gyorsasága
-	void tamad(Szorny &)const; 
+	void tamad(Szorny &)const; ///< Egy darab ütést visz be
 };
